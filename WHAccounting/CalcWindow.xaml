@@ -1,0 +1,41 @@
+﻿<Window x:Class="WHAccounting.CalcWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WHAccounting"
+        mc:Ignorable="d"
+        Title="Calculator" Height="600" Width="400">
+    <Grid x:Name="GridElements">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4" x:Name="calculateArea" Text="" FontSize="50"/>
+        <Button Grid.Row="4" Grid.Column="1" x:Name="button0" Content="0" FontSize="40" Height="115"/>
+        <Button Grid.Row="3" Grid.Column="0" x:Name="button1" Content="1" FontSize="40" Height="115"/>
+        <Button Grid.Row="3" Grid.Column="1" x:Name="button2" Content="2" FontSize="40" Height="115"/>
+        <Button Grid.Row="3" Grid.Column="2" x:Name="button3" Content="3" FontSize="40" Height="115"/>
+        <Button Grid.Row="2" Grid.Column="0" x:Name="button4" Content="4" FontSize="40" Height="115"/>
+        <Button Grid.Row="2" Grid.Column="1" x:Name="button5" Content="5" FontSize="40" Height="115"/>
+        <Button Grid.Row="2" Grid.Column="2" x:Name="button6" Content="6" FontSize="40" Height="115"/>
+        <Button Grid.Row="1" Grid.Column="0" x:Name="button7" Content="7" FontSize="40" Height="115"/>
+        <Button Grid.Row="1" Grid.Column="1" x:Name="button8" Content="8" FontSize="40" Height="115"/>
+        <Button Grid.Row="1" Grid.Column="2" x:Name="button9" Content="9" FontSize="40" Height="115"/>
+        <Button Grid.Row="4" Grid.Column="0" x:Name="buttonAC" Content="AC" FontSize="30" Background="Orange" Height="115"/>
+        <Button Grid.Row="4" Grid.Column="2" x:Name="buttonEqual" Content="=" FontSize="40" Background="Orange" Height="115"/>
+        <Button Grid.Row="1" Grid.Column="3" x:Name="buttonPlus" Content="+" FontSize="40" Background="RoyalBlue" Height="115"/>
+        <Button Grid.Row="2" Grid.Column="3" x:Name="buttonMinus" Content="-" FontSize="40" Background="RoyalBlue" Height="115"/>
+        <Button Grid.Row="3" Grid.Column="3" x:Name="buttonMultiply" Content="*" FontSize="40" Background="RoyalBlue" Height="115"/>
+        <Button Grid.Row="4" Grid.Column="3" x:Name="buttonDivide" Content="/" FontSize="40" Background="RoyalBlue" Height="115"/>
+    </Grid>
+</Window>

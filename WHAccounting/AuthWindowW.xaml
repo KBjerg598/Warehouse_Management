@@ -1,0 +1,29 @@
+﻿<Window x:Class="WHAccounting.AuthWindowW"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WHAccounting"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        Title="Autorization Window" Height="600" Width="1000" WindowStartupLocation="CenterScreen">
+    <Grid Background="#ffdadada">
+        <Border MinWidth="400" Margin="15,0,15,0" Background="white" VerticalAlignment="Center" Padding="30" MaxWidth="550" CornerRadius="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="30" Color="LightGray" ShadowDepth="0"/>
+            </Border.Effect>
+            <StackPanel>
+                <TextBlock Text="Login Window" HorizontalAlignment="Center" FontSize="30" FontWeight="Bold" Margin="0 0 0 20"/>
+                <Grid Margin="0 0 0 20">
+                    <Button x:Name="signUpButtonSection" HorizontalAlignment="Left" Content="Sign up" Style="{StaticResource MaterialDesignFlatDarkBgButton}" Click="SignUp_Click"/>
+                    <Button x:Name="signInButtonSection" HorizontalAlignment="Right" Content="Sign in" Style="{StaticResource MaterialDesignFlatDarkButton}" Click="SignIn_Click"/>
+                </Grid>
+                <TextBox x:Name="textBoxLogin" materialDesign:HintAssist.Hint="Enter user name" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <TextBox x:Name="textBoxPhone" materialDesign:HintAssist.Hint="Enter phone number" Style="{StaticResource MaterialDesignFloatingHintTextBox}"/>
+                <PasswordBox x:Name="passwordBoxEnterPassword" materialDesign:HintAssist.Hint="Enter password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <PasswordBox x:Name="passwordBoxConfirmPassword" materialDesign:HintAssist.Hint="Confirm password" Style="{StaticResource MaterialDesignFloatingHintPasswordBox}"/>
+                <Button x:Name="regAuthButton" Content="Sign up" Margin="0 20" Click="Registration_Button"/>
+            </StackPanel>
+        </Border>
+    </Grid>
+</Window>
